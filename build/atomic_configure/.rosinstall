@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/glab/catkin_ws/src/teb_planner_hj/build/devel/setup.sh

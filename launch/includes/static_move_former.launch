@@ -1,0 +1,56 @@
+<launch>
+  <master auto="start"/>
+
+
+  <!-- Robot State Publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="robot_description" command="$(find xacro)/xacro '~/catkin_ws/src/former/former_description/urdf/former.urdf.xacro'" />
+</node>
+
+  <!-- Map Server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find teb_planner_hj)/map/my_map.yaml" />
+
+  <!-- AMCL Localization -->
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <param name="odom_frame_id" value="odom" />
+    <param name="base_frame_id" value="base_footprint" />
+    <param name="global_frame_id" value="map" />
+    <param name="scan_topic" value="scan" />
+  </node>
+
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find teb_planner_hj)/config/custom_rosconsole.conf"/>  
+  
+  <arg name="cmd_vel_topic" default="/former_base_controller/cmd_vel" />
+  <arg name="odom_topic" default="/former_base_controller/odom" />
+  <arg name="move_forward_only" default="false"/>
+
+  <arg name="msg" default="Starting TEB local planner." />
+
+  <!-- Move Base -->
+  <node pkg="move_base" type="move_base" name="move_base" output="screen">
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/move_base_params.yaml" command="load" />
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/teb_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find teb_planner_hj)/param/param_teb/global_planner_params.yaml" command="load" />
+
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <remap from="odom" to="$(arg odom_topic)"/>
+
+    <param name="global_costmap/global_frame" value="map"/>
+    <param name="global_costmap/robot_base_frame" value="base_link"/>
+    <param name="global_costmap/laser_scan_sensor/sensor_frame" value="laser_link"/>
+    <param name="global_costmap/laser_scan_sensor/topic" value="scan"/>    
+
+    <param name="local_costmap/global_frame" value="odom"/>
+    <param name="local_costmap/robot_base_frame" value="base_link"/>
+    <param name="local_costmap/laser_scan_sensor/sensor_frame" value="laser_link"/>
+    <param name="local_costmap/laser_scan_sensor/topic" value="scan"/>
+    <param name="local_costmap/obstacle_layer/laser_scan_sensor/topic" value="scan"/>
+    <param name="TebLocalPlannerROS/map_frame" value="odom"/>
+  </node>
+
+</launch>

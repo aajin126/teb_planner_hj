@@ -1,0 +1,61 @@
+<launch>
+
+    <arg name="record_cameras" default="true" />
+    <node name="img_throttler" type="throttle" pkg="topic_tools" args="messages /camera/color/image_raw/compressed 10 /camera/color/image_throttle/compressed" />
+
+    <node pkg="rosbag" type="record" name="rosbag_record_cam" 
+    args="record -o /media/former/FetchSSD/ subset_topics
+
+    /cmd_vel
+    /former_base_controller/cmd_vel
+    /imu
+    /map_updates
+    /move_base/DWAPlannerROS/cost_cloud
+    /move_base/DWAPlannerROS/global_plan
+    /move_base/DWAPlannerROS/local_plan
+    /move_base/DWAPlannerROS/parameter_descriptions
+    /move_base/DWAPlannerROS/parameter_updates
+    /move_base/DWAPlannerROS/trajectory_cloud
+    /move_base/NavfnROS/plan
+    /move_base/cancel
+    /move_base/current_goal
+    /move_base/feedback
+    /move_base/global_costmap/costmap
+    /move_base/global_costmap/costmap_updates
+    /move_base/global_costmap/footprint
+    /move_base/global_costmap/inflation_layer/parameter_descriptions
+    /move_base/global_costmap/inflation_layer/parameter_updates
+    /move_base/global_costmap/parameter_descriptions
+    /move_base/global_costmap/parameter_updates
+    /move_base/global_costmap/static_layer/parameter_descriptions
+    /move_base/global_costmap/static_layer/parameter_updates
+    /move_base/global_costmap/voxel_layer/clearing_endpoints
+    /move_base/global_costmap/voxel_layer/parameter_descriptions
+    /move_base/global_costmap/voxel_layer/parameter_updates
+    /move_base/global_costmap/voxel_layer/voxel_grid
+    /move_base/goal
+    /move_base/local_costmap/costmap
+    /move_base/local_costmap/costmap_updates
+    /move_base/local_costmap/footprint
+    /move_base/local_costmap/inflation_layer/parameter_descriptions
+    /move_base/local_costmap/inflation_layer/parameter_updates
+    /move_base/local_costmap/parameter_descriptions
+    /move_base/local_costmap/parameter_updates
+    /move_base/local_costmap/voxel_layer/clearing_endpoints
+    /move_base/local_costmap/voxel_layer/parameter_descriptions
+    /move_base/local_costmap/voxel_layer/parameter_updates
+    /move_base/local_costmap/voxel_layer/voxel_grid
+    /move_base/parameter_descriptions
+    /move_base/parameter_updates
+    /move_base/recovery_status
+    /move_base/result
+    /move_base/status
+    /move_base_simple/goal
+    /robot_footprints
+    /robot_path
+
+    "
+    />
+
+
+</launch>
