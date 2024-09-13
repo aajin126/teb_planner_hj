@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/melodic/**",
+                "/usr/include/eigen3",
+                "/usr/include/suitesparse",
+                "/opt/ros/melodic/include/visualization_msgs",
+                "/opt/ros/melodic/include/costmap_converter",
+                "${workspaceFolder}/inc/g2o_types",
+                "/opt/ros/melodic/include/teb_local_planner"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
