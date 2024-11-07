@@ -27,6 +27,7 @@ class DynamicPlannerNode:
         # Initialize start pose variables
         self.start_x = None
         self.start_y = None
+        self.start_z = None
         self.start_yaw = None
 
         # Set up a TF listener to get the robot's current pose
@@ -53,35 +54,37 @@ class DynamicPlannerNode:
             z = trans.transform.translation.z
             orientation = trans.transform.rotation
             _, _, yaw = tf.transformations.euler_from_quaternion([orientation.x, orientation.y, orientation.z, orientation.w])
-            return x, y, yaw
+            return x, y, z, yaw
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
             rospy.logerr("Failed to get robot pose: %s" % e)
             return None
 
     def goal_callback(self, msg):
-        rospy.loginfo('Received goal position from RViz: x=%f, y=%f, orientation_w=%f',
+        rospy.loginfo('Received goal position from RViz: x=%f, y=%f, z=%f, orientation_w=%f',
                       msg.pose.position.x,
                       msg.pose.position.y,
+                      msg.pose.position.z,
                       msg.pose.orientation.w)
 
         # Get the current robot pose
         start_pose = self.get_robot_pose()
         if start_pose:
-            self.start_x, self.start_y, self.start_yaw = start_pose
-            rospy.loginfo('Start position: x=%f, y=%f, yaw=%f', self.start_x, self.start_y, self.start_yaw)
+            self.start_x, self.start_y, self.start_z, self.start_yaw = start_pose
+            rospy.loginfo('Start position: x=%f, y=%f, z=%f, orientation_w=%f', self.start_x, self.start_y, self.start_z, self.start_yaw)
             # Log the start position
-            self.result_file.write("Start position: x: {}, y: {}, yaw: {}\n".format(self.start_x, self.start_y, self.start_yaw))
+            self.result_file.write("Start position: x: {}, y: {}, z: {}, orientation_w: {}\n".format(self.start_x, self.start_y, self.start_z, self.start_yaw))
         else:
             rospy.logerr('Failed to get start pose')
             return
 
         # Move to the new goal
-        self.move_to_goal(msg.pose.position.x, msg.pose.position.y, msg.pose.orientation.w)
+        self.move_to_goal(msg.pose.position.x, msg.pose.position.y, msg.pose.position.z, msg.pose.orientation.w)
 
-    def move_to_goal(self, x, y, w):
+    def move_to_goal(self, x, y, z, w):
         rospy.loginfo('Moving to goal position')
         self.goal.target_pose.pose.position.x = x
         self.goal.target_pose.pose.position.y = y
+        self.goal.target_pose.pose.position.z = z
         self.goal.target_pose.pose.orientation.w = w
         self.move_client.send_goal(self.goal)
 
@@ -95,19 +98,19 @@ class DynamicPlannerNode:
             if self.move_client.get_state() == GoalStatus.SUCCEEDED:
                 rospy.loginfo('Goal reached successfully!')
                 if self.start_x is not None and self.start_y is not None:
-                    self.result_file.write("Success: Start -> x: {}, y: {}, yaw: {} | Goal -> x: {}, y: {}, orientation_w: {}\n".format(
-                        self.start_x, self.start_y, self.start_yaw, x, y, w))
+                    self.result_file.write("Success: Start -> x: {}, y: {},z: {}, orientation_w: {} | Goal -> x: {}, y: {}, z: {}, orientation_w: {}\n".format(
+                        self.start_x, self.start_y, self.start_z, self.start_yaw, x, y, z, w))
                 else:
-                    self.result_file.write("Success: Goal -> x: {}, y: {}, orientation_w: {}\n".format(
+                    self.result_file.write("Success: Goal -> x: {}, y: {}, z: {}, orientation_w: {}\n".format(
                         x, y, w))
             else:
                 rospy.loginfo('Failed to reach the goal.')
                 if self.start_x is not None and self.start_y is not None:
-                    self.result_file.write("Failure: Start -> x: {}, y: {}, yaw: {} | Goal -> x: {}, y: {}, orientation_w: {}\n".format(
-                        self.start_x, self.start_y, self.start_yaw, x, y, w))
+                    self.result_file.write("Failure: Start -> x: {}, y: {}, z: {}, orientation_w: {} | Goal -> x: {}, y: {}, z: {}, orientation_w: {}\n".format(
+                        self.start_x, self.start_y, self.start_z, self.start_yaw, x, y, z, w))
                 else:
-                    self.result_file.write("Failure: Goal -> x: {}, y: {}, orientation_w: {}\n".format(
-                        x, y, w))
+                    self.result_file.write("Failure: Goal -> x: {}, y: {}, z: {}, orientation_w: {}\n".format(
+                        x, y, z, w))
 
     def main(self):
         rospy.loginfo('Waiting for goals from RViz...')

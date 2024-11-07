@@ -86,7 +86,7 @@ class testPlannerNode:
         
     def main(self):
         try:
-            result_f = open("b_fail_list.txt", "a")
+            result_f = open("b_list.txt", "a")
             rospy.loginfo('File is opened!!')
         except:
             rospy.logerr("Failed to open file..")
