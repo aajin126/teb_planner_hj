@@ -6,7 +6,7 @@
 
   <!-- <env name="GAZEBO_RESOURCE_PATH" value="$(find sim_env)/gazebo_images/includes/meshes"/> -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find aws_robomaker_bookstore_world)/worlds/bookstore_corridor.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+    <arg name="world_name" value="$(find aws_robomaker_bookstore_world)/worlds/bookstore_whole.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -14,12 +14,10 @@
     <arg name="debug" value="false"/>
   </include>
   
-      <include file="$(find autoexplorer)/launch/includes/former.launch.xml">
+      <include file="$(find teb_planner_hj)/launch/includes/former.launch.xml">
           <arg name="init_pose" value="-x 0 -y 0 -z 0.1"/>
       </include>
 
-
-      
   <!--arg name="pgm_file" value ="$(find autoexplorer)/blueprints/willowgarage_closed.pgm"/>
   <arg name="yaml_file" value ="$(find autoexplorer)/blueprints/willowgarage_closed.yaml"/>
   <node pkg="autoexplorer" type="exploration_metric_for_single_robot.py" name="metric" args="$(arg pgm_file) $(arg yaml_file)" output="screen"> 

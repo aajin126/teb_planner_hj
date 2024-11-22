@@ -60,7 +60,7 @@ class DynamicPlannerNode:
             return None
 
     def goal_callback(self, msg):
-        rospy.loginfo('Received goal position from RViz: x=%f, y=%f, z=%f, orientation_w=%f',
+        rospy.loginfo('Goal: (%f, %f, %f, %f)',
                       msg.pose.position.x,
                       msg.pose.position.y,
                       msg.pose.position.z,
@@ -70,7 +70,7 @@ class DynamicPlannerNode:
         start_pose = self.get_robot_pose()
         if start_pose:
             self.start_x, self.start_y, self.start_z, self.start_yaw = start_pose
-            rospy.loginfo('Start position: x=%f, y=%f, z=%f, orientation_w=%f', self.start_x, self.start_y, self.start_z, self.start_yaw)
+            rospy.loginfo('Start: (%f, %f, %f, %f)', self.start_x, self.start_y, self.start_z, self.start_yaw)
             # Log the start position
             self.result_file.write("Start position: x: {}, y: {}, z: {}, orientation_w: {}\n".format(self.start_x, self.start_y, self.start_z, self.start_yaw))
         else:

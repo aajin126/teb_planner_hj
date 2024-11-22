@@ -1,0 +1,68 @@
+<launch>
+
+    <arg name="record_cameras" default="true" />
+    <node name="img_throttler" type="throttle" pkg="topic_tools" args="messages /camera/color/image_raw/compressed 10 /camera/color/image_throttle/compressed" />
+
+    <node pkg="rosbag" type="record" name="rosbag_record_cam" 
+    args="record -o /media/former/FetchSSD/ subset_topics
+
+    /curr_goal_shape
+    /curr_goal_shape_array
+    /distance_map
+    /filtered_shapes
+    /imu
+    /joint_states
+    /map
+    /map_metadata
+    /map_updates
+    /move_base/NavfnROS/plan
+    /move_base/TebLocalPlannerROS/local_plan
+    /move_base/TebLocalPlannerROS/teb_markers
+    /move_base/TebLocalPlannerROS/teb_markers_array
+    /move_base/TebLocalPlannerROS/teb_poses
+    /move_base/cancel
+    /move_base/current_goal
+    /move_base/feedback
+    /move_base/global_costmap/costmap
+    /move_base/global_costmap/costmap_updates
+    /move_base/global_costmap/footprint
+    /move_base/global_costmap/inflation_layer/parameter_descriptions
+    /move_base/global_costmap/inflation_layer/parameter_updates
+    /move_base/global_costmap/obstacle_layer/clearing_endpoints
+    /move_base/global_costmap/obstacle_layer/parameter_descriptions
+    /move_base/global_costmap/obstacle_layer/parameter_updates
+    /move_base/global_costmap/parameter_descriptions
+    /move_base/global_costmap/parameter_updates
+    /move_base/global_costmap/static_layer/parameter_descriptions
+    /move_base/global_costmap/static_layer/parameter_updates
+    /move_base/goal
+    /move_base/local_costmap/costmap
+    /move_base/local_costmap/costmap_updates
+    /move_base/local_costmap/footprint
+    /move_base/local_costmap/obstacle_layer/parameter_descriptions
+    /move_base/local_costmap/obstacle_layer/parameter_updates
+    /move_base/local_costmap/parameter_descriptions
+    /move_base/local_costmap/parameter_updates
+    /move_base/local_costmap/static_layer/parameter_descriptions
+    /move_base/local_costmap/static_layer/parameter_updates
+    /move_base/parameter_descriptions
+    /move_base/parameter_updates
+    /move_base/recovery_status
+    /move_base/result
+    /move_base/status
+    /move_base_simple/goal
+    /odom
+    /robot_path
+    /robot_path_array
+    /rosout
+    /rosout_agg
+    /scan
+    /tf
+    /tf_static
+
+
+    "
+    />
+
+
+</launch>
