@@ -10,8 +10,6 @@ project(teb_planner_hj)
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake_modules)
 
 find_package(Boost REQUIRED COMPONENTS system thread graph)
-find_package(SUITESPARSE REQUIRED)
-find_package(G2O REQUIRED)
 find_package(OpenCV REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -122,7 +120,6 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 
 catkin_package(
-   INCLUDE_DIRS inc
    LIBRARIES ${PROJECT_NAME}
    CATKIN_DEPENDS actionlib actionlib_msg costmap_2d cv_bridge map_msgs move_base nav_msgs navfn roscpp rospy std_msgs
    DEPENDS OpenCV OpenMP
@@ -131,13 +128,7 @@ catkin_package(
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
-  ${catkin_INCLUDE_DIRS}
-  ${SUITESPARSE_INCLUDE_DIRS}
-  ${G2O_INCLUDE_DIR}
   ${OpenCV_INCLUDE_DIRS}
-  /opt/ros/melodic/include  
-  /opt/ros/melodic/lib
-  /opt/ros/melodic/share
 )
 
 ###########
@@ -156,13 +147,13 @@ message("include " ${CATKIN_DEVEL_PREFIX})
 #   src/${PROJECT_NAME}/teb_planner_hj.cpp
 # )
 
-add_library(lib_teb
-        src/teb_config.cpp
-        src/obstacles.cpp
-        src/visualization.cpp
-        src/optimal_planner.cpp
-        src/timed_elastic_band.cpp
-)
+#add_library(lib_teb
+#        src/teb_config.cpp
+#        src/obstacles.cpp
+#        src/visualization.cpp
+#        src/optimal_planner.cpp
+#        src/timed_elastic_band.cpp
+#)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -192,17 +183,6 @@ add_executable(obstacle_visualizer src/obstacle_visualizer.cpp)
 # )
 target_link_libraries(path_visualizer ${catkin_LIBRARIES})
 target_link_libraries(obstacle_visualizer ${catkin_LIBRARIES})
-
-
-
-target_link_libraries(
-	lib_teb
-        ${SUITESPARSE_LIBRARIES}
-        ${G2O_LIBRARIES}
-        -lboost_system -lboost_thread -lboost_graph
-        ${OpenCV_LIBS}
-)
-
 
 #############
 ## Install ##
@@ -245,10 +225,6 @@ target_link_libraries(
 #   # myfile2
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
-
-install(DIRECTORY lib/
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}/../
-  PATTERN ".git" EXCLUDE)
 
 install(DIRECTORY config/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
