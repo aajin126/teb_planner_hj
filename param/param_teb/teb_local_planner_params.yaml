@@ -40,14 +40,14 @@ TebLocalPlannerROS:
   complete_global_plan: True
 
   # Obstacles
-  min_obstacle_dist: 0.17 #0.23 
+  min_obstacle_dist: 0.15 #0.23 
   include_costmap_obstacles: True
   costmap_obstacles_behind_robot_dist: 1.0
   inflation_dist: 0.25
   include_dynamic_obstacles: True
   dynamic_obstacle_inflation_dist: 0.6
   legacy_obstacle_association: False
-  obstacle_association_force_inclusion_factor: 1.5
+  obstacle_association_force_inclusion_factor: 1.0
   obstacle_association_cutoff_factor: 7.0
 
 #costmap_converter_plugin: "" 
@@ -73,14 +73,14 @@ TebLocalPlannerROS:
   weight_acc_lim_theta: 1.0
   weight_kinematics_nh: 100.0
   weight_kinematics_forward_drive: 10.0 #100.0
-  weight_kinematics_turning_radius: 1.0
+  weight_kinematics_turning_radius: 2.0
   weight_optimaltime: 10.0 # must be > 0
 #weight_shortest_path: 10.0
   weight_obstacle: 100.0
   weight_inflation: 0.1
   weight_dynamic_obstacle: 10.0
   weight_dynamic_obstacle_inflation: 0.2
-  weight_velocity_obstacle_ratio : 0.0
+  weight_velocity_obstacle_ratio : 1.5 #change
   weight_viapoint: 1.0
   weight_adapt_factor: 2.0
 
