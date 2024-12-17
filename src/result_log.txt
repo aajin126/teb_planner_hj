@@ -210,3 +210,5 @@ Start position: x: -5.34905109901, y: -1.64587995755, z: 0.0962611639031, orient
 Failure: Start -> x: -5.34905109901, y: -1.64587995755, z: 0.0962611639031, orientation_w: 0.0963802661023 | Goal -> x: -5.71088314056, y: -1.70981013775, z: 0.0, orientation_w: -0.0115827871085
 Start position: x: 2.29702155405, y: -5.99320806892, z: 0.0962406611827, orientation_w: -2.9558781925
 Failure: Start -> x: 2.29702155405, y: -5.99320806892, z: 0.0962406611827, orientation_w: -2.9558781925 | Goal -> x: -0.565181970596, y: -0.926994800568, z: 0.0, orientation_w: 0.318472357586
+Start position: x: -0.502633633119, y: 4.46463610031, z: 0.0962363567714, orientation_w: -3.03243317512
+Failed to connect to action server
