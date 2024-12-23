@@ -402,13 +402,13 @@ Visualization Manager:
       Topic: ""
       Value: false
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
       Name: Marker
       Namespaces:
-        {}
+        PointObstacles: true
       Queue Size: 100
-      Value: false
+      Value: true
     - Class: rviz/Marker
       Enabled: false
       Marker Topic: /move_base/TebLocalPlannerROS/footprint_markers
@@ -484,16 +484,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 9.644349098205566
+      Distance: 15.175569534301758
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.5056025981903076
-        Y: 1.9312368631362915
-        Z: 0.1098722368478775
+        X: -0.0725482925772667
+        Y: 4.209285736083984
+        Z: 0.11214807629585266
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -520,5 +520,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1267
-  X: 167
-  Y: 462
+  X: 198
+  Y: 484
