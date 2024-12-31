@@ -1,8 +1,8 @@
-<sdf version='1.6'>
+<sdf version='1.7'>
   <world name='default'>
     <gui fullscreen='0'>
       <camera name='gzclient_camera'>
-        <pose frame=''>0.388629 3.8125 13.8177 3.8e-05 1.5698 1.58774</pose>
+        <pose>-0.182765 -0.278802 16.7412 -4.1e-05 1.5698 1.56768</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -65,13 +65,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>7.4582 1.42245 3.29094 0 -0 -1.56422</pose>
+      <pose>7.4582 1.42245 3.29094 0 -0 -1.56422</pose>
     </model>
     <model name='BookshelfA_01_001'>
       <link name='aws_robomaker_retail_BookshelfA_01::link'>
@@ -117,13 +117,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
+      <pose>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
     </model>
     <model name='BookshelfA_01_002'>
       <link name='aws_robomaker_retail_BookshelfA_01::link'>
@@ -169,13 +169,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>1.40515 -4.76165 0.003411 0 -0 0</pose>
+      <pose>1.40515 -4.76165 0.003411 0 -0 0</pose>
     </model>
     <model name='BookshelfA_01_003'>
       <link name='aws_robomaker_retail_BookshelfA_01::link'>
@@ -221,13 +221,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.55449 -1.48746 0.006337 0.001313 -0.001987 0.031824</pose>
+      <pose>-2.55449 -1.48746 0.006337 0.001313 -0.001987 0.031824</pose>
     </model>
     <model name='BookshelfA_01_004'>
       <link name='aws_robomaker_retail_BookshelfA_01::link'>
@@ -273,13 +273,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.60858 -4.76165 0.003411 0 -0 0</pose>
+      <pose>-2.60858 -4.76165 0.003411 0 -0 0</pose>
     </model>
     <model name='BookshelfB_01_001'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -325,13 +325,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
+      <pose>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
     </model>
     <model name='BookshelfB_01_002'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -377,13 +377,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
+      <pose>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
     </model>
     <model name='BookshelfB_01_003'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -429,13 +429,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
+      <pose>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
     </model>
     <model name='BookshelfB_01_004'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -481,13 +481,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
+      <pose>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
     </model>
     <model name='BookshelfB_01_005'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -533,13 +533,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
+      <pose>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
     </model>
     <model name='BookshelfB_01_006'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -585,13 +585,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
+      <pose>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
     </model>
     <model name='BookshelfB_01_007'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -637,13 +637,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
+      <pose>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
     </model>
     <model name='BookshelfB_01_008'>
       <link name='aws_robomaker_retail_BookshelfB_01::link'>
@@ -689,13 +689,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
+      <pose>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
     </model>
     <model name='BookshelfC_01_001'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -741,13 +741,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
+      <pose>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
     </model>
     <model name='BookshelfC_01_002'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -793,13 +793,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
+      <pose>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
     </model>
     <model name='BookshelfC_01_003'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -845,13 +845,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-4.51711 -1.31023 0.045908 0 -0 0</pose>
+      <pose>-4.51711 -1.31023 0.045908 0 -0 0</pose>
     </model>
     <model name='BookshelfC_01_004'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -897,13 +897,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-4.61436 -4.76165 0.045908 0 -0 0</pose>
+      <pose>-4.61436 -4.76165 0.045908 0 -0 0</pose>
     </model>
     <model name='ColumnB_01_002'>
       <link name='aws_robomaker_retail_ColumnB_01::link'>
@@ -949,13 +949,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
+      <pose>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
     </model>
     <model name='DeskA_01_002'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -1001,13 +1001,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+      <pose>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
     </model>
     <model name='DeskA_01_003'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -1053,13 +1053,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
+      <pose>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
     </model>
     <model name='DeskA_01_004'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -1105,13 +1105,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-0.701688 -4.04929 0.014866 0 -0 -1.5661</pose>
+      <pose>-0.701688 -4.04929 0.014866 0 -0 -1.5661</pose>
     </model>
     <model name='DeskA_01_005'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -1157,13 +1157,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.2982 0.861754 0.014883 -2e-06 0.003451 2.4e-05</pose>
+      <pose>2.2982 0.861754 0.014883 -2e-06 0.003451 2.4e-05</pose>
     </model>
     <model name='DoorB_01_001'>
       <link name='aws_robomaker_retail_DoorB_01::link'>
@@ -1209,13 +1209,13 @@
             <layer>2</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.49246 7.21937 -0.035203 0 -0 0</pose>
+      <pose>-2.49246 7.21937 -0.035203 0 -0 0</pose>
     </model>
     <model name='RetailShopFloor_01_001'>
       <link name='aws_robomaker_retail_RetailShopFloor_01::link'>
@@ -1256,13 +1256,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-0.002687 0 -0.276618 0 -0 0</pose>
+      <pose>-0.002687 0 -0.276618 0 -0 0</pose>
     </model>
     <model name='Horologe_01_001'>
       <link name='aws_robomaker_retail_Horologe_01::link'>
@@ -1300,13 +1300,13 @@
             <layer>2</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.40512 3.02571 2.52519 0 -0 -1.56558</pose>
+      <pose>2.40512 3.02571 2.52519 0 -0 -1.56558</pose>
     </model>
     <model name='RetailShopWall_01_001'>
       <link name='aws_robomaker_retail_RetailShopWall_01::link'>
@@ -1344,13 +1344,13 @@
             <layer>2</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>0 0 -0.281282 0 -0 0</pose>
+      <pose>0 0 -0.281282 0 -0 0</pose>
     </model>
     <model name='LightA_01_001'>
       <link name='aws_robomaker_retail_LightA_01::link'>
@@ -1388,13 +1388,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.77442 -3.62815 3.15033 0 -0 0</pose>
+      <pose>2.77442 -3.62815 3.15033 0 -0 0</pose>
     </model>
     <model name='LightA_01_002'>
       <link name='aws_robomaker_retail_LightA_01::link'>
@@ -1432,13 +1432,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>5.38399 -5.38371 3.15033 0 -0 0</pose>
+      <pose>5.38399 -5.38371 3.15033 0 -0 0</pose>
     </model>
     <model name='LightA_01_003'>
       <link name='aws_robomaker_retail_LightA_01::link'>
@@ -1476,13 +1476,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>5.38399 0.04192 3.15033 0 -0 0</pose>
+      <pose>5.38399 0.04192 3.15033 0 -0 0</pose>
     </model>
     <model name='LightA_01_004'>
       <link name='aws_robomaker_retail_LightA_01::link'>
@@ -1520,13 +1520,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-3.21067 -5.38371 3.15033 0 -0 0</pose>
+      <pose>-3.21067 -5.38371 3.15033 0 -0 0</pose>
     </model>
     <model name='LightA_01_005'>
       <link name='aws_robomaker_retail_LightA_01::link'>
@@ -1564,13 +1564,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-3.271 2.68593 3.15033 0 -0 0</pose>
+      <pose>-3.271 2.68593 3.15033 0 -0 0</pose>
     </model>
     <model name='Spotlight_01_001'>
       <link name='aws_robomaker_retail_Spotlight_01::link'>
@@ -1608,13 +1608,13 @@
             <layer>3</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>1.4932 4.69237 3.30266 0 -0 0</pose>
+      <pose>1.4932 4.69237 3.30266 0 -0 0</pose>
     </model>
     <model name='ShopWindow_01_001'>
       <link name='aws_robomaker_retail_ShopWindow_01::link'>
@@ -1649,17 +1649,17 @@
             </mesh>
           </geometry>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-7.73816 0.01596 -0.180092 0 -0 0</pose>
+      <pose>-7.73816 0.01596 -0.180092 0 -0 0</pose>
     </model>
     <light name='RetailShop_CeilingLight_001' type='point'>
-      <pose frame=''>2.77442 -3.62815 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>2.77442 -3.62815 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1669,10 +1669,15 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <light name='RetailShop_CeilingLight_002' type='point'>
-      <pose frame=''>5.38399 -5.38371 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>5.38399 -5.38371 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1682,10 +1687,15 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <light name='RetailShop_CeilingLight_003' type='point'>
-      <pose frame=''>5.38399 0.04192 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>5.38399 0.04192 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1695,10 +1705,15 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <light name='RetailShop_CeilingLight_004' type='point'>
-      <pose frame=''>-3.21067 -5.38371 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>-3.21067 -5.38371 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1708,10 +1723,15 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <light name='RetailShop_CeilingLight_005' type='point'>
-      <pose frame=''>-3.271 2.68593 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>-3.271 2.68593 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1721,10 +1741,15 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <light name='RetailShop_CeilingLight_006' type='point'>
-      <pose frame=''>1.4932 4.69237 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <pose>1.4932 4.69237 3.17847 0 -0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -1734,13 +1759,18 @@
       </attenuation>
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <audio>
       <device>default</device>
     </audio>
     <wind/>
     <light name='user_directional_light_0' type='directional'>
-      <pose frame=''>1.49712 -12.0596 1 0 -0 0</pose>
+      <pose>1.49712 -12.0596 1 0 -0 0</pose>
       <diffuse>0.5 0.5 0.5 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <direction>0.1 0.1 -0.9</direction>
@@ -1751,546 +1781,541 @@
         <quadratic>0.001</quadratic>
       </attenuation>
       <cast_shadows>1</cast_shadows>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
     </light>
     <state world_name='default'>
-      <sim_time>9637 24000000</sim_time>
-      <real_time>520 426915638</real_time>
-      <wall_time>1731386838 468977027</wall_time>
-      <iterations>519525</iterations>
+      <sim_time>9863 548000000</sim_time>
+      <real_time>227 984153855</real_time>
+      <wall_time>1735626392 540834028</wall_time>
+      <iterations>226524</iterations>
       <model name='AirConditionerC_01_001'>
-        <pose frame=''>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
+        <pose>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_AirConditionerC_01::link'>
-          <pose frame=''>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
+          <pose>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfA_01_001'>
-        <pose frame=''>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
+        <pose>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfA_01::link'>
-          <pose frame=''>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
+          <pose>1.40515 -1.44974 0.03755 0.00349 -3e-06 0.000696</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfA_01_002'>
-        <pose frame=''>1.40515 -4.76165 0.003411 0 -0 0</pose>
+        <pose>1.40515 -4.76165 0.003411 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfA_01::link'>
-          <pose frame=''>1.40515 -4.76165 0.003411 0 -0 0</pose>
+          <pose>1.40515 -4.76165 0.003411 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfA_01_003'>
-        <pose frame=''>-2.39042 -1.27891 0.006337 0.001313 -0.001987 0.031824</pose>
+        <pose>-2.39042 -1.27891 0.006337 0.001313 -0.001987 0.031824</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfA_01::link'>
-          <pose frame=''>-2.39042 -1.27891 0.006337 0.001313 -0.001987 0.031824</pose>
+          <pose>-2.39042 -1.27891 0.006337 0.001313 -0.001987 0.031824</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfA_01_004'>
-        <pose frame=''>-2.92417 -4.3226 0.003411 0 -0 0</pose>
+        <pose>-2.92417 -4.3226 0.003411 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfA_01::link'>
-          <pose frame=''>-2.92417 -4.3226 0.003411 0 -0 0</pose>
+          <pose>-2.92417 -4.3226 0.003411 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_001'>
-        <pose frame=''>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
+        <pose>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
+          <pose>-6.18968 -6.78565 -0.008942 0.003533 0.000121 -0.032073</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_002'>
-        <pose frame=''>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
+        <pose>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
+          <pose>-2.20941 -6.97146 0.017074 -0.000128 -0.000252 0.000364</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_003'>
-        <pose frame=''>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
+        <pose>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
+          <pose>0.522246 -6.9715 0.017947 -0.003292 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_004'>
-        <pose frame=''>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
+        <pose>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
+          <pose>3.29339 -6.96366 0.017383 8e-06 -2e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_005'>
-        <pose frame=''>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
+        <pose>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
+          <pose>6.08038 -6.98766 0.017409 0.000174 4e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_006'>
-        <pose frame=''>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
+        <pose>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
+          <pose>7.47833 -5.2983 0.017443 -0.001974 -0.000211 1.55406</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_007'>
-        <pose frame=''>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
+        <pose>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
+          <pose>7.47833 -2.51065 0.017402 1e-05 -1.3e-05 1.56207</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfB_01_008'>
-        <pose frame=''>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
+        <pose>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfB_01::link'>
-          <pose frame=''>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
+          <pose>7.47833 0.402539 0.017181 3e-06 -0.000156 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_001'>
-        <pose frame=''>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
+        <pose>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
+          <pose>2.91113 -1.31023 0.008469 0.003452 -3e-06 0.00062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_001_clone'>
-        <pose frame=''>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
+        <pose>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
+          <pose>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_002'>
-        <pose frame=''>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
+        <pose>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
+          <pose>2.91545 -4.76171 -0.003455 0.003452 -0 1.4e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_003'>
-        <pose frame=''>-4.51711 -1.31023 0.045908 0 -0 0</pose>
+        <pose>-4.51711 -1.31023 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-4.51711 -1.31023 0.045908 0 -0 0</pose>
+          <pose>-4.51711 -1.31023 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004'>
-        <pose frame=''>-4.69738 -5.09708 0.045908 0 -0 0</pose>
+        <pose>-4.69738 -5.09708 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-4.69738 -5.09708 0.045908 0 -0 0</pose>
+          <pose>-4.69738 -5.09708 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004_clone'>
-        <pose frame=''>-4.70305 -4.24272 0.045908 0 -0 0</pose>
+        <pose>-4.70305 -4.24272 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-4.70305 -4.24272 0.045908 0 -0 0</pose>
+          <pose>-4.70305 -4.24272 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004_clone_0'>
-        <pose frame=''>-3.85444 -5.09852 0.045908 0 -0 0</pose>
+        <pose>-3.85444 -5.09852 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-3.85444 -5.09852 0.045908 0 -0 0</pose>
+          <pose>-3.85444 -5.09852 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004_clone_clone'>
-        <pose frame=''>-5.36777 -2.61163 0.045908 0 -0 0</pose>
+        <pose>-5.36777 -2.61163 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-5.36777 -2.61163 0.045908 0 -0 0</pose>
+          <pose>-5.36777 -2.61163 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004_clone_clone_0'>
-        <pose frame=''>-4.51023 -2.61355 0.045908 0 -0 0</pose>
+        <pose>-4.51023 -2.61355 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-4.51023 -2.61355 0.045908 0 -0 0</pose>
+          <pose>-4.51023 -2.61355 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='BookshelfC_01_004_clone_clone_1'>
-        <pose frame=''>-3.67338 -2.61887 0.045908 0 -0 0</pose>
+        <pose>-3.67338 -2.61887 0.045908 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_BookshelfC_01::link'>
-          <pose frame=''>-3.67338 -2.61887 0.045908 0 -0 0</pose>
+          <pose>-3.67338 -2.61887 0.045908 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ColumnB_01_002'>
-        <pose frame=''>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
+        <pose>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_ColumnB_01::link'>
-          <pose frame=''>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
+          <pose>-4.07623 -6.86071 0.017511 0.001895 -0.000628 -0.003755</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_002'>
-        <pose frame=''>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+        <pose>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+          <pose>-2.36994 0.836099 0.00876 -0.000772 -0.001938 1.7e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_002_clone'>
-        <pose frame=''>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+        <pose>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+          <pose>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_003'>
-        <pose frame=''>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
+        <pose>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
+          <pose>-6.25465 -3.9792 -0.004603 0.001948 0.001361 -1.56957</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_003_clone'>
-        <pose frame=''>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
+        <pose>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
+          <pose>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_004'>
-        <pose frame=''>-0.701688 -4.04929 0.014866 0 0 -1.5661</pose>
+        <pose>-0.701688 -4.04929 0.014866 0 0 -1.5661</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>-0.701688 -4.04929 0.014866 0 0 -1.5661</pose>
+          <pose>-0.701688 -4.04929 0.014866 0 0 -1.5661</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_004_clone'>
-        <pose frame=''>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
+        <pose>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
+          <pose>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_004_clone_0'>
-        <pose frame=''>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
+        <pose>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
+          <pose>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DeskA_01_005'>
-        <pose frame=''>4.4553 0.835772 0.014883 -2e-06 0.003451 2.4e-05</pose>
+        <pose>4.4553 0.835772 0.014883 -2e-06 0.003451 2.4e-05</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DeskA_01::link'>
-          <pose frame=''>4.4553 0.835772 0.014883 -2e-06 0.003451 2.4e-05</pose>
+          <pose>4.4553 0.835772 0.014883 -2e-06 0.003451 2.4e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='DoorB_01_001'>
-        <pose frame=''>-2.49246 7.21937 -0.035203 0 -0 0</pose>
+        <pose>-2.49246 7.21937 -0.035203 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_DoorB_01::link'>
-          <pose frame=''>-2.49246 7.21937 -0.035203 0 -0 0</pose>
+          <pose>-2.49246 7.21937 -0.035203 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Horologe_01_001'>
-        <pose frame=''>2.40512 3.02571 2.52519 0 0 -1.56558</pose>
+        <pose>2.40512 3.02571 2.52519 0 0 -1.56558</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_Horologe_01::link'>
-          <pose frame=''>2.40512 3.02571 2.52519 0 0 -1.56558</pose>
+          <pose>2.40512 3.02571 2.52519 0 0 -1.56558</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LightA_01_001'>
-        <pose frame=''>2.77442 -3.62815 3.15033 0 -0 0</pose>
+        <pose>2.77442 -3.62815 3.15033 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_LightA_01::link'>
-          <pose frame=''>2.77442 -3.62815 3.15033 0 -0 0</pose>
+          <pose>2.77442 -3.62815 3.15033 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LightA_01_002'>
-        <pose frame=''>5.38399 -5.38371 3.15033 0 -0 0</pose>
+        <pose>5.38399 -5.38371 3.15033 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_LightA_01::link'>
-          <pose frame=''>5.38399 -5.38371 3.15033 0 -0 0</pose>
+          <pose>5.38399 -5.38371 3.15033 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LightA_01_003'>
-        <pose frame=''>5.38399 0.04192 3.15033 0 -0 0</pose>
+        <pose>5.38399 0.04192 3.15033 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_LightA_01::link'>
-          <pose frame=''>5.38399 0.04192 3.15033 0 -0 0</pose>
+          <pose>5.38399 0.04192 3.15033 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LightA_01_004'>
-        <pose frame=''>-3.21067 -5.38371 3.15033 0 -0 0</pose>
+        <pose>-3.21067 -5.38371 3.15033 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_LightA_01::link'>
-          <pose frame=''>-3.21067 -5.38371 3.15033 0 -0 0</pose>
+          <pose>-3.21067 -5.38371 3.15033 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LightA_01_005'>
-        <pose frame=''>-3.271 2.68593 3.15033 0 -0 0</pose>
+        <pose>-3.271 2.68593 3.15033 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_LightA_01::link'>
-          <pose frame=''>-3.271 2.68593 3.15033 0 -0 0</pose>
+          <pose>-3.271 2.68593 3.15033 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='RetailShopFloor_01_001'>
-        <pose frame=''>0.098196 0.040108 -0.276618 0 -0 0</pose>
+        <pose>0.098196 0.040108 -0.276618 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_RetailShopFloor_01::link'>
-          <pose frame=''>0.098196 0.040108 -0.276618 0 -0 0</pose>
+          <pose>0.098196 0.040108 -0.276618 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='RetailShopWall_01_001'>
-        <pose frame=''>0 0 -0.281282 0 -0 0</pose>
+        <pose>0 0 -0.281282 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_RetailShopWall_01::link'>
-          <pose frame=''>0 0 -0.281282 0 -0 0</pose>
+          <pose>0 0 -0.281282 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ShopWindow_01_001'>
-        <pose frame=''>-7.73816 0.01596 -0.180092 0 -0 0</pose>
+        <pose>-7.73816 0.01596 -0.180092 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_ShopWindow_01::link'>
-          <pose frame=''>-7.73816 0.01596 -0.180092 0 -0 0</pose>
+          <pose>-7.73816 0.01596 -0.180092 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='Spotlight_01_001'>
-        <pose frame=''>1.4932 4.69237 3.30266 0 -0 0</pose>
+        <pose>1.4932 4.69237 3.30266 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_Spotlight_01::link'>
-          <pose frame=''>1.4932 4.69237 3.30266 0 -0 0</pose>
+          <pose>1.4932 4.69237 3.30266 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box'>
-        <pose frame=''>-3.93445 4.42049 0.513382 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-3.93445 4.42049 0.513382 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-6e-06 1.1e-05 3e-06 -2.2e-05 -1.2e-05 -0</acceleration>
-          <wrench>-6e-06 1.1e-05 3e-06 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='unit_box_1'>
-        <pose frame=''>2.14956 0.979146 0.513382 -0 -0 -0.000227</pose>
+        <pose>2.14956 0.979146 0.513382 -0 -0 -0.000227</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.14956 0.979146 0.513382 -0 -0 -0.000227</pose>
+          <pose>2.14956 0.979146 0.513382 -0 -0 -0.000227</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>8e-06 4e-06 -6e-06 -9e-06 1.5e-05 -0</acceleration>
           <wrench>8e-06 4e-06 -6e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_2'>
-        <pose frame=''>1.14889 0.822715 0.513382 0 -0 0.000333</pose>
+        <pose>1.14889 0.822715 0.513382 0 -0 0.000333</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.14889 0.822715 0.513382 0 -0 0.000333</pose>
+          <pose>1.14889 0.822715 0.513382 0 -0 0.000333</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.000523 3.6e-05 1e-05 -7.4e-05 -0.001044 1e-06</acceleration>
-          <wrench>-0.000523 3.6e-05 1e-05 0 -0 0</wrench>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_3'>
-        <pose frame=''>1.03503 1.82271 0.513382 0 -0 0.000363</pose>
+        <pose>1.03503 1.82271 0.513382 0 -0 0.000363</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.03503 1.82271 0.513382 0 -0 0.000363</pose>
+          <pose>1.03503 1.82271 0.513382 0 -0 0.000363</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_4'>
+        <pose>1.26839 2.8228 0.513382 0 -0 0.000368</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.26839 2.8228 0.513382 0 -0 0.000368</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_5'>
+        <pose>1.05148 3.8231 0.513382 0 -0 0.001692</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.05148 3.8231 0.513382 0 -0 0.001692</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0 -0 0 0 -0 0</acceleration>
           <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_4'>
-        <pose frame=''>1.26839 2.8228 0.513382 0 -0 0.000368</pose>
+      <model name='unit_box_6'>
+        <pose>1.19512 4.82467 0.513382 0 -0 0.0043</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.26839 2.8228 0.513382 0 -0 0.000368</pose>
+          <pose>1.19512 4.82467 0.513382 0 -0 0.0043</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 0 0 -0 -0 -0</acceleration>
+          <wrench>-0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_7'>
+        <pose>1.01489 5.82404 0.513382 0 -0 0.004346</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.01489 5.82404 0.513382 0 -0 0.004346</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0 0 -0 -0 -0 -0</acceleration>
           <wrench>-0 0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_5'>
-        <pose frame=''>1.05148 3.8231 0.513382 0 -0 0.001692</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>1.05148 3.8231 0.513382 0 -0 0.001692</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_box_6'>
-        <pose frame=''>1.19512 4.82467 0.513382 0 -0 0.0043</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>1.19512 4.82467 0.513382 0 -0 0.0043</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_box_7'>
-        <pose frame=''>1.01489 5.82404 0.513382 0 -0 0.004346</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>1.01489 5.82404 0.513382 0 -0 0.004346</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='RetailShop_CeilingLight_001'>
-        <pose frame=''>2.77442 -3.62815 3.17847 0 -0 0</pose>
+        <pose>2.77442 -3.62815 3.17847 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_002'>
-        <pose frame=''>5.38399 -5.38371 3.17847 0 -0 0</pose>
+        <pose>5.38399 -5.38371 3.17847 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_003'>
-        <pose frame=''>5.38399 0.04192 3.17847 0 -0 0</pose>
+        <pose>5.38399 0.04192 3.17847 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_004'>
-        <pose frame=''>-3.21067 -5.38371 3.17847 0 -0 0</pose>
+        <pose>-3.21067 -5.38371 3.17847 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_005'>
-        <pose frame=''>-3.271 2.68593 3.17847 0 -0 0</pose>
+        <pose>-3.271 2.68593 3.17847 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_006'>
-        <pose frame=''>1.4932 4.69237 3.17847 0 -0 0</pose>
+        <pose>1.4932 4.69237 3.17847 0 -0 0</pose>
       </light>
       <light name='user_directional_light_0'>
-        <pose frame=''>1.49712 -12.0596 1 0 -0 0</pose>
+        <pose>1.49712 -12.0596 1 0 -0 0</pose>
       </light>
     </state>
     <model name='unit_box_1'>
-      <pose frame=''>2.151 1.07841 0.5 0 -0 0</pose>
+      <pose>2.151 1.07841 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2302,6 +2327,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2342,7 +2368,7 @@
       </link>
     </model>
     <model name='unit_box_2'>
-      <pose frame=''>1.15308 1.07824 0.5 0 -0 0</pose>
+      <pose>1.15308 1.07824 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2354,6 +2380,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2394,7 +2421,7 @@
       </link>
     </model>
     <model name='unit_box_3'>
-      <pose frame=''>1.34075 2.08452 0.5 0 -0 0</pose>
+      <pose>1.34075 2.08452 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2406,6 +2433,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2446,7 +2474,7 @@
       </link>
     </model>
     <model name='unit_box_4'>
-      <pose frame=''>1.33627 3.08503 0.5 0 -0 0</pose>
+      <pose>1.33627 3.08503 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2458,6 +2486,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2498,7 +2527,7 @@
       </link>
     </model>
     <model name='unit_box_5'>
-      <pose frame=''>1.33978 4.08543 0.5 0 -0 0</pose>
+      <pose>1.33978 4.08543 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2510,6 +2539,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2550,7 +2580,7 @@
       </link>
     </model>
     <model name='unit_box_6'>
-      <pose frame=''>1.34335 5.08039 0.5 0 -0 0</pose>
+      <pose>1.34335 5.08039 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2562,6 +2592,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2602,7 +2633,7 @@
       </link>
     </model>
     <model name='unit_box_7'>
-      <pose frame=''>1.34316 6.08108 0.5 0 -0 0</pose>
+      <pose>1.34316 6.08108 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2614,6 +2645,7 @@
             <iyz>0</iyz>
             <izz>0.166667</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <collision name='collision'>
           <geometry>
@@ -2697,13 +2729,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-4.61945 -3.89501 0.045908 0 -0 0</pose>
+      <pose>-4.61945 -3.89501 0.045908 0 -0 0</pose>
     </model>
     <model name='BookshelfC_01_004_clone_clone'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -2749,13 +2781,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-5.36777 -2.61163 0.045908 0 -0 0</pose>
+      <pose>-5.36777 -2.61163 0.045908 0 -0 0</pose>
     </model>
     <model name='BookshelfC_01_004_clone_clone_0'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -2801,13 +2833,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-4.51023 -2.61355 0.045908 0 -0 0</pose>
+      <pose>-4.51023 -2.61355 0.045908 0 -0 0</pose>
     </model>
     <model name='BookshelfC_01_004_clone_clone_1'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -2853,13 +2885,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-3.5269 -2.96652 0.045908 0 -0 0</pose>
+      <pose>-3.5269 -2.96652 0.045908 0 -0 0</pose>
     </model>
     <model name='DeskA_01_003_clone'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -2905,13 +2937,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
+      <pose>-6.16308 0.394366 -0.004603 0.001948 0.001361 -1.56957</pose>
     </model>
     <model name='DeskA_01_002_clone'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -2957,13 +2989,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
+      <pose>-2.41842 2.54055 0.00876 -0.000772 -0.001938 1.7e-05</pose>
     </model>
     <model name='DeskA_01_004_clone'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -3009,13 +3041,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
+      <pose>4.40146 -3.1869 0.014866 0 0 -1.5661</pose>
     </model>
     <model name='DeskA_01_004_clone_0'>
       <link name='aws_robomaker_retail_DeskA_01::link'>
@@ -3061,13 +3093,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
+      <pose>6.0615 -3.23014 0.014866 0 0 -1.5661</pose>
     </model>
     <model name='BookshelfC_01_001_clone'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -3113,13 +3145,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
+      <pose>2.93416 -3.07224 0.008469 0.003452 -3e-06 0.00062</pose>
     </model>
     <model name='BookshelfC_01_004_clone_0'>
       <link name='aws_robomaker_retail_BookshelfC_01::link'>
@@ -3165,13 +3197,13 @@
             <layer>1</layer>
           </meta>
         </visual>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-      <pose frame=''>-3.85444 -5.09852 0.045908 0 -0 0</pose>
+      <pose>-3.85444 -5.09852 0.045908 0 -0 0</pose>
     </model>
   </world>
 </sdf>

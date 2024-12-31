@@ -4915,28 +4915,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='former'>
-        <pose frame=''>0.021361 4.47781 0.096248 9.4e-05 0.000189 -2.93758</pose>
-        <scale>1 1 1</scale>
-        <link name='base_link'>
-          <pose frame=''>0.021361 4.47781 0.096248 9.4e-05 0.000189 -2.93758</pose>
-          <velocity>2.4e-05 0.000304 -0.000418 0.004331 0.001153 -0.000594</velocity>
-          <acceleration>0.074078 -0.128773 -0.77208 2.11539 -1.07997 -0.063836</acceleration>
-          <wrench>2.61664 -4.54863 -27.2722 0 -0 0</wrench>
-        </link>
-        <link name='left_wheel_link'>
-          <pose frame=''>0.05175 4.33092 0.097863 3.1415 0.314099 0.203983</pose>
-          <velocity>-5.2e-05 0.000216 -0.001284 0.002063 0.000684 -0.000254</velocity>
-          <acceleration>-0.002418 0.075732 -2.40441 -2.83938 1.21202 0.163611</acceleration>
-          <wrench>-0.007254 0.227196 -7.21323 0 -0 0</wrench>
-        </link>
-        <link name='right_wheel_link'>
-          <pose frame=''>-0.009029 4.6247 0.097834 3.1415 -0.206284 0.204031</pose>
-          <velocity>0.000113 0.000316 0.000252 0.004303 0.001147 -0.000594</velocity>
-          <acceleration>-0.006459 0.200859 0.468715 -1.60171 1.04124 -2.49993</acceleration>
-          <wrench>-0.019378 0.602576 1.40614 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='unit_box'>
         <pose frame=''>-2.96245 6.59694 0.513382 -0 -0 -2.1e-05</pose>
         <scale>1 1 1</scale>
