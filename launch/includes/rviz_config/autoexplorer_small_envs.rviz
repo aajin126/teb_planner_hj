@@ -12,7 +12,8 @@ Panels:
         - /Marker8
         - /Marker9
         - /Marker10
-      Splitter Ratio: 0.4194977879524231
+        - /Marker11
+      Splitter Ratio: 0.4192139804363251
     Tree Height: 580
   - Class: rviz/Selection
     Name: Selection
@@ -83,12 +84,12 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: costmap
       Draw Behind: true
-      Enabled: false
+      Enabled: true
       Name: Map
       Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: false
+      Value: true
     - Alpha: 0.5
       Class: rviz/Map
       Color Scheme: costmap
@@ -418,7 +419,7 @@ Visualization Manager:
       Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
       Name: Marker
       Namespaces:
-        PointObstacles: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -471,7 +472,15 @@ Visualization Manager:
       Value: false
     - Class: rviz/Marker
       Enabled: true
-      Marker Topic: /visualization_marker
+      Marker Topic: /move_base/TebLocalPlannerROS/visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /move_base/TebLocalPlannerROS/via_point_marker
       Name: Marker
       Namespaces:
         {}
@@ -496,7 +505,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 16.510658264160156
+      Distance: 13.710391998291016
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -504,9 +513,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -1.5166888236999512
-        Y: -0.6984682679176331
-        Z: 0.10724721103906631
+        X: -2.577009677886963
+        Y: -2.973642110824585
+        Z: 0.1049773246049881
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -533,4 +542,4 @@ Window Geometry:
     collapsed: true
   Width: 1267
   X: 331
-  Y: 612
+  Y: 454

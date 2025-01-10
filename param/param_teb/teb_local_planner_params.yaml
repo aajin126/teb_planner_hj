@@ -4,7 +4,7 @@ TebLocalPlannerROS:
 
   # Trajectory
   teb_autosize: True 
-  dt_ref: 0.25 # Desired temporal resolution of the trajectory (the trajectory is not fixed to dt_ref since the temporal resolution is part of the optimization, but the trajectory will be resized between iterations if dt_ref +-dt_hysteresis is violated. 
+  dt_ref: 0.3 # Desired temporal resolution of the trajectory (the trajectory is not fixed to dt_ref since the temporal resolution is part of the optimization, but the trajectory will be resized between iterations if dt_ref +-dt_hysteresis is violated. 
   dt_hysteresis: 0.1 #Hysteresis for automatic resizing depending on the current temporal resolution, usually approx. 10% of dt_ref is recommended 
   min_samples: 3
   global_plan_overwrite_orientation: True
@@ -19,7 +19,7 @@ TebLocalPlannerROS:
   shrink_horizon_min_duration: 10
 
   # Robot
-  max_vel_x: 0.6
+  max_vel_x: 0.7
   max_vel_x_backwards: 0.1
   max_vel_y: 0.0
   max_vel_theta: 1.4 #1.82 #0.9
@@ -43,7 +43,7 @@ TebLocalPlannerROS:
   min_obstacle_dist: 0.15 #0.23 
   include_costmap_obstacles: True
   costmap_obstacles_behind_robot_dist: 1.0
-  inflation_dist: 0.25
+  inflation_dist: 0.21
   include_dynamic_obstacles: True
   dynamic_obstacle_inflation_dist: 0.6
   legacy_obstacle_association: False
@@ -71,7 +71,7 @@ TebLocalPlannerROS:
   weight_acc_lim_x: 1.0
   weight_acc_lim_y: 0.0
   weight_acc_lim_theta: 1.0
-  weight_kinematics_nh: 100.0
+  weight_kinematics_nh: 500.0
   weight_kinematics_forward_drive: 10.0 #100.0
   weight_kinematics_turning_radius: 2.0
   weight_optimaltime: 10.0 #must be > 0
@@ -81,7 +81,7 @@ TebLocalPlannerROS:
   weight_dynamic_obstacle: 10.0
   weight_dynamic_obstacle_inflation: 0.2
   weight_velocity_obstacle_ratio : 1.5 #change
-  weight_viapoint: 1.0
+  weight_viapoint: 100.0
   weight_adapt_factor: 2.0
 
 # Homotopy Class Planner

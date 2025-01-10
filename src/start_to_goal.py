@@ -38,8 +38,8 @@ class TestPlannerNode:
         # self.goal_coords = (-0.623410, 4.627364, 0.000000, 0.956708) 
 
         # coordinates (in ball ostacle)
-        self.start_coords = (-0.508081, 4.606983, 0.096251, -2.960428) 
-        self.goal_coords = (-4.626476, 3.871368, 0.000000, -0.121070) 
+        self.start_coords = (-4.190331, 4.173361, 0.096251, 0.002489) 
+        self.goal_coords = (-0.062500, 4.591092, 0.000000, 0.951909)
 
         # Trajectory tracking
         self.trajectory_points = []
@@ -158,9 +158,9 @@ class TestPlannerNode:
         rospy.loginfo("Node is running...")
         
         # Perform the teleport and goal-setting sequence 6 times
-        for i in range(6):
+        for i in range(100):
             rospy.sleep(5)
-            rospy.loginfo("Cycle %d/6: Teleporting to start and sending goal...", i + 1)
+            rospy.loginfo("Cycle %d/100: Teleporting to start and sending goal...", i + 1)
             
             # Clear previous trajectory points
             self.trajectory_points = []
