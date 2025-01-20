@@ -1,7 +1,7 @@
 <launch>
   <arg name="init_pose" default="-x 1.0 -y 1.0 -z 0.0"/>
   
-  <param name="robot_description" command="$(find xacro)/xacro $(find former_description)/urdf/former_gazebo.urdf.xacro --inorder" />
+  <param name="robot_description" command="$(find xacro)/xacro $(find former_description)/urdf/former_gazebo.urdf.xacro" />
   
   <!-- Spawn the former in gazebo -->
   <node pkg="gazebo_ros" type="spawn_model" name="urdf_spawner" output="screen" 

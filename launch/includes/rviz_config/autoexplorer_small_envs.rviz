@@ -4,7 +4,6 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Path3
         - /Odometry1/Shape1
         - /TF1
         - /TF1/Frames1
@@ -84,12 +83,12 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: costmap
       Draw Behind: true
-      Enabled: true
+      Enabled: false
       Name: Map
       Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 0.5
       Class: rviz/Map
       Color Scheme: costmap
@@ -293,28 +292,12 @@ Visualization Manager:
       Value: false
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Filter (blacklist): ""
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        base_link:
-          Value: true
-        imu_link:
-          Value: false
-        laser_base_link:
-          Value: false
-        laser_link:
-          Value: false
-        left_wheel_link:
-          Value: false
-        map:
-          Value: false
-        odom:
-          Value: false
-        right_wheel_link:
-          Value: false
       Marker Alpha: 1
       Marker Scale: 4
       Name: TF
@@ -322,20 +305,9 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          odom:
-            base_link:
-              imu_link:
-                {}
-              laser_base_link:
-                laser_link:
-                  {}
-              left_wheel_link:
-                {}
-              right_wheel_link:
-                {}
+        {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -394,7 +366,7 @@ Visualization Manager:
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: PoseArray
@@ -404,7 +376,7 @@ Visualization Manager:
       Shape: Arrow (Flat)
       Topic: /move_base/TebLocalPlannerROS/teb_poses
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Class: rviz/GridCells
       Color: 25; 255; 0
@@ -419,7 +391,7 @@ Visualization Manager:
       Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
       Name: Marker
       Namespaces:
-        {}
+        PointObstacles: true
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -471,21 +443,21 @@ Visualization Manager:
       Queue Size: 100
       Value: false
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /move_base/TebLocalPlannerROS/visualization_marker
       Name: Marker
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /move_base/TebLocalPlannerROS/via_point_marker
       Name: Marker
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -505,7 +477,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 13.710391998291016
+      Distance: 5.178898811340332
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -513,9 +485,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -2.577009677886963
-        Y: -2.973642110824585
-        Z: 0.1049773246049881
+        X: -2.5933737754821777
+        Y: 4.653677463531494
+        Z: 0.11259669810533524
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -523,7 +495,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 4.717308521270752
+      Yaw: 4.687298774719238
     Saved: ~
 Window Geometry:
   Displays:
