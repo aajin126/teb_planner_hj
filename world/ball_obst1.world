@@ -3787,7 +3787,7 @@
     </model>
     <light name='RetailShop_CeilingLight_001' type='point'>
       <pose frame=''>2.77442 -3.62815 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3800,7 +3800,7 @@
     </light>
     <light name='RetailShop_CeilingLight_002' type='point'>
       <pose frame=''>5.38399 -5.38371 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3813,7 +3813,7 @@
     </light>
     <light name='RetailShop_CeilingLight_003' type='point'>
       <pose frame=''>5.38399 0.04192 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3826,7 +3826,7 @@
     </light>
     <light name='RetailShop_CeilingLight_004' type='point'>
       <pose frame=''>-3.21067 -5.38371 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3839,7 +3839,7 @@
     </light>
     <light name='RetailShop_CeilingLight_005' type='point'>
       <pose frame=''>-3.271 2.68593 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3852,7 +3852,7 @@
     </light>
     <light name='RetailShop_CeilingLight_006' type='point'>
       <pose frame=''>1.4932 4.69237 3.17847 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
         <range>20</range>
@@ -3869,7 +3869,7 @@
     <wind/>
     <light name='user_directional_light_0' type='directional'>
       <pose frame=''>1.49712 -12.0596 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
       <specular>0.1 0.1 0.1 1</specular>
       <direction>0.1 0.1 -0.9</direction>
       <attenuation>

@@ -158,7 +158,7 @@ class TestPlannerNode:
         rospy.loginfo("Node is running...")
         
         # Perform the teleport and goal-setting sequence 6 times
-        for i in range(100):
+        for i in range(1):
             rospy.sleep(5)
             rospy.loginfo("Cycle %d/100: Teleporting to start and sending goal...", i + 1)
             

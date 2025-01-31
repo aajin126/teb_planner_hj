@@ -6,15 +6,14 @@ map_type: costmap
 
 obstacle_layer:
  enabled: true
- obstacle_range: 3.0
- raytrace_range: 4.0
- inflation_radius: 0.2
+ obstacle_range: 3.0 # Only obstacles within this distance are added to the cost map.(m)
+ raytrace_range: 4.0 #Maximum distance from the sensor to detect the space behind the obstacle (the area where the ray is shot and detected)
+ inflation_radius: 0.21
  track_unknown_space: true
  combination_method: 1
 
  observation_sources: laser_scan_sensor
  laser_scan_sensor: {data_type: LaserScan, topic: scan, marking: true, clearing: true}
-
 
 inflation_layer:
   enabled:              true
