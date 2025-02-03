@@ -163,7 +163,7 @@ def update(frame_index):
             y_coord = fixed_origin[1] + r
             txt_color = "white" if mask_obstacle[r, c] else "black"
             txt = ax.text(x_coord, y_coord, f"{val:.0f}",
-                          ha="center", va="center", fontsize=8, color=txt_color)
+                          ha="center", va="center", fontsize=4, color=txt_color)
             pot_texts.append(txt)
     
     # 제목 업데이트: 현재 iteration 번호를 포함
