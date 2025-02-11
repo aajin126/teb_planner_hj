@@ -38,8 +38,12 @@ class TestPlannerNode:
         # self.goal_coords = (-0.623410, 4.627364, 0.000000, 0.956708) 
 
         # coordinates (in ball ostacle)
-        self.start_coords = (-0.413095, 4.470869, 0.096228, 0.109937)
-        self.goal_coords = (-3.495294, 4.358590, 0.000000, 0.224746)
+        # self.start_coords = (-0.413095, 4.470869, 0.096228, 0.109937)
+        # self.goal_coords = (-3.495294, 4.358590, 0.000000, 0.224746)
+
+        # more narrow obstacle 
+        self.start_coords = (-0.181113, 4.373028, 0.000040, -2.900895)
+        self.goal_coords = (-3.556548, 4.038556, 0.000000, 0.001070)     
 
         # Trajectory tracking
         self.trajectory_points = []

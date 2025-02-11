@@ -391,7 +391,7 @@ Visualization Manager:
       Marker Topic: /move_base/TebLocalPlannerROS/teb_markers
       Name: Marker
       Namespaces:
-        {}
+        PointObstacles: true
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -451,13 +451,13 @@ Visualization Manager:
       Queue Size: 100
       Value: false
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /move_base/TebLocalPlannerROS/via_point_marker
       Name: Marker
       Namespaces:
         {}
       Queue Size: 100
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -477,7 +477,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.954943656921387
+      Distance: 3.6564033031463623
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -485,9 +485,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -2.5933737754821777
-        Y: 4.653677463531494
-        Z: 0.11259669810533524
+        X: -2.3263864517211914
+        Y: 4.453079700469971
+        Z: 0.1123935878276825
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -495,7 +495,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 4.722299575805664
+      Yaw: 4.672298431396484
     Saved: ~
 Window Geometry:
   Displays:
@@ -513,5 +513,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1848
-  X: 72
-  Y: 454
+  X: 2618
+  Y: 224

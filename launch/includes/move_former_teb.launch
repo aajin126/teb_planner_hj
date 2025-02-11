@@ -27,6 +27,7 @@
   <!-- start SLAM -->
   <node pkg="slam_toolbox" type="lifelong_slam_toolbox_node" name="slam_toolbox" output="screen">
       <!--remap from="/scan"  to="/base_scan"/-->
+      <!--remap from="front/scan" to="scan"/--> <!-- using jackal with slam-->
       <rosparam command="load" file="$(find slam_toolbox)/config/mapper_params_lifelong.yaml" />
   </node>
 
@@ -49,6 +50,7 @@
   <arg name="move_forward_only" default="false"/>
 
   <arg name="msg" default="Starting TEB local planner." />
+  
   
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" args="pub /msg std_msgs/String '$(arg msg)'" output="screen">
     <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
