@@ -6,7 +6,9 @@
 
   <!-- <env name="GAZEBO_RESOURCE_PATH" value="$(find sim_env)/gazebo_images/includes/meshes"/> -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
     <arg name="world_name" value="$(find teb_planner_hj)/world/high_dense_world_down.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>

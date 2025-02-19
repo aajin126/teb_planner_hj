@@ -19,10 +19,10 @@ TebLocalPlannerROS:
   shrink_horizon_min_duration: 10
 
   # Robot
-  max_vel_x: 0.7
+  max_vel_x: 0.6
   max_vel_x_backwards: 0.1
   max_vel_y: 0.0
-  max_vel_theta: 1.4 #1.82 #0.9
+  max_vel_theta: 1.2 #1.82 #0.9
   acc_lim_x: 0.7
   acc_lim_y: 0.0
   acc_lim_theta: 0.5 #1.5 #2.0 #0.9
@@ -40,7 +40,7 @@ TebLocalPlannerROS:
   complete_global_plan: True
 
   # Obstacles
-  min_obstacle_dist: 0.15 #0.23 
+  min_obstacle_dist: 0.13 #0.23 
   include_costmap_obstacles: True
   costmap_obstacles_behind_robot_dist: 1.0
   inflation_dist: 0.21
@@ -71,12 +71,12 @@ TebLocalPlannerROS:
   weight_acc_lim_x: 1.0
   weight_acc_lim_y: 0.0
   weight_acc_lim_theta: 1.0
-  weight_kinematics_nh: 500.0
-  weight_kinematics_forward_drive: 10.0 #100.0
+  weight_kinematics_nh: 1000.0
+  weight_kinematics_forward_drive: 100.0 
   weight_kinematics_turning_radius: 2.0
   weight_optimaltime: 10.0 #must be > 0
 #weight_shortest_path: 10.0
-  weight_obstacle: 100.0
+  weight_obstacle: 10.0
   weight_inflation: 0.1
   weight_dynamic_obstacle: 10.0
   weight_dynamic_obstacle_inflation: 0.2
