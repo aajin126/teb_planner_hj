@@ -12,7 +12,7 @@ TebLocalPlannerROS:
   max_global_plan_lookahead_dist: 5.0
   force_reinit_new_goal_dist: 1.0
   feasibility_check_no_poses: 10 #5
-  publish_feedback: True
+  publish_feedback: False
   shrink_horizon_backup: True
   allow_init_with_backwards_motion: False
   exact_arc_length: False
@@ -62,7 +62,7 @@ TebLocalPlannerROS:
   no_inner_iterations: 5
   no_outer_iterations: 4
   optimization_activate: True
-  optimization_verbose: True
+  optimization_verbose: False
   penalty_epsilon: 0.03
 #obstacle_cost_exponent: 4
   weight_max_vel_x: 2.0
