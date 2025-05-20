@@ -45,8 +45,8 @@
   
   <env name="ROSCONSOLE_CONFIG_FILE" value="$(find teb_planner_hj)/config/custom_rosconsole.conf"/>  
   
-  <arg name="cmd_vel_topic" default="/former_base_controller/cmd_vel" />
-  <arg name="odom_topic" default="/former_base_controller/odom" />
+  <arg name="cmd_vel_topic" default="/jackal_velocity_controller/cmd_vel" />
+  <arg name="odom_topic" default="/jackal_velocity_controller/odom" />
   <arg name="move_forward_only" default="false"/>
 
   <arg name="msg" default="Starting TEB local planner." />
