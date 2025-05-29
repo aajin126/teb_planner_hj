@@ -4,6 +4,25 @@ import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from geometry_msgs.msg import Pose, Point, Quaternion
 from actionlib_msgs.msg import GoalStatus
+from gazebo_msgs.srv import SetModelState
+from gazebo_msgs.msg import ModelState
+import time 
+
+from pathlen_calc import PathVisualizer
+
+
+def reset_robot_pose(start_pose):
+    rospy.wait_for_service("/gazebo/set_model_state")
+    try:
+        set_state = rospy.ServiceProxy("/gazebo/set_model_state", SetModelState)
+        state_msg = ModelState()
+        state_msg.model_name = "former" 
+        state_msg.pose = start_pose
+        state_msg.reference_frame = "world"
+        result = set_state(state_msg)
+        rospy.loginfo("Robot reset to start pose: %s", result.success)
+    except rospy.ServiceException as e:
+        rospy.logerr("Service call failed: %s", e)
 
 def goto_goal(client, pose):
     goal = MoveBaseGoal()
@@ -21,60 +40,66 @@ def goto_goal(client, pose):
 def main():
     rospy.init_node("sequential_goal_sender")
 
-    # move_base 액션 클라이언트 초기화
     client = actionlib.SimpleActionClient("move_base", MoveBaseAction)
     rospy.loginfo("Waiting for move_base action server...")
     client.wait_for_server()
     rospy.loginfo("Connected to move_base server.")
 
-    # 주어진 goal pose들을 리스트에 정의 (순서대로)
+    path_logger = PathVisualizer()
+
+    # 로봇이 시작할 기본 pose 정의
+    start_pose = Pose(
+        position=Point(x=0.035176217555999756, y=0.0025000572204589844, z=0.004619598388671875),
+        orientation=Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
+    )
+
+    # 이동할 goal 목록
     goals = [
-        #Pose(Point(2.075901508331299, -0.9431991577148438, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        Pose(Point(2.116427421569824, -1.095625877380371, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0))
-        # Pose(Point(2.916426658630371, -2.345625877380371, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-0.0835728645324707, -0.017227649688720703, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(1.240919589996338, -2.427267551422119, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-1.3590803146362305, -3.077267646789551, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-1.5740985870361328, -3.6431994438171387, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-1.5835728645324707, -3.6672279834747314, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-1.5835728645324707, -3.6456260681152344, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.1590805053710938, -2.7772674560546875, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.3090806007385254, -2.627267837524414, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.509080410003662, -1.9272675514221191, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-4.25908088684082, -2.327267646789551, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.009080410003662, -1.5272674560546875, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.509080410003662, -0.9772677421569824, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.4835729598999023, -0.9456257820129395, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-3.509080410003662, -0.9772677421569824, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.159080505371094, -2.327267646789551, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-4.965807914733887, -3.326188564300537, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.322455406188965, -3.22623872756958, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.415807723999023, -4.576188564300537, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.409080505371094, -4.577267646789551, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-4.922454833984375, -2.8262386322021484, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.365808010101318, -2.576188564300537, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.37245512008667, -2.5762386322021484, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.672454833984375, -5.626238822937012, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-5.172454833984375, -5.72623872756958, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0)),
-        # Pose(Point(-4.909080505371094, -5.877267837524414, 0.0), Quaternion(0.0, 0.0, 0.0, 1.0))
+        Pose(position=Point(-5.376387596130371, -1.9829909801483154, 0.0025796890258789062), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-7.038274765014648, -6.100484848022461, 0.004405975341796875), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(2.0859322547912598, -5.926054954528809, 0.004673004150390625), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(2.153135299682617, -1.359513759613037, 0.0032796859741210938), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-3.689016342163086, -1.930342197418213, 0.00272369384765625), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(3.6924867630004883, -5.551314830780029, 0.005063056945800781), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(5.42404842376709, -1.186535358428955, 0.0034856796264648438), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(5.483254432678223, -5.260541915893555, 0.0053730010986328125), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-5.36610221862793, -3.011920690536499, 0.0015506744384765625), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-0.5889233350753784, -6.269580841064453, 0.004302024841308594), orientation=Quaternion(0, 0, 0, 1)),
     ]
 
-    rate = rospy.Rate(30)  # 1 Hz, 각 goal 사이에 잠시 대기
+    rate = rospy.Rate(10)  # 1 Hz 대기
 
-    for idx, pose in enumerate(goals):
+    for idx, goal_pose in enumerate(goals):
+        rospy.loginfo("Resetting robot to start pose...")
+        reset_robot_pose(start_pose)
+        rospy.sleep(1.0)
+
         rospy.loginfo("Sending goal %d", idx + 1)
-        state = goto_goal(client, pose)
+
+        path_logger.set_goal_index(idx)
+        path_logger.start()
+        start_time = time.time()
+
+        state = goto_goal(client, goal_pose)
+
+        travel_time = time.time() - start_time
+        distance = path_logger.stop()
 
         if state == GoalStatus.SUCCEEDED:
             rospy.loginfo("Reached goal %d successfully.", idx + 1)
+            rospy.loginfo("Path length: %.2f meters", distance)
+            rospy.loginfo("Travel time: %.2f seconds", travel_time)
+
+            with open("path_lengths.txt", "a") as f:
+                f.write("Goal %d: %.2f meters, %.2f seconds\n" % (idx + 1, distance, travel_time))
         else:
             rospy.logwarn("Failed to reach goal %d. State: %d", idx + 1, state)
 
-        # 다음 goal 전 잠시 대기 (원하는 시간으로 조절)
-        rate.sleep()
-
+        rospy.sleep(1.0)
+        
 if __name__ == '__main__':
     try:
         main()
     except rospy.ROSInterruptException:
         pass
+

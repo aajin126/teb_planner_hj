@@ -1,0 +1,13 @@
+Goal 1: 10.59 meters, 83.47 seconds
+Goal 2: 12.02 meters, 56.79 seconds
+Goal 3: 7.63 meters, 35.13 seconds
+Goal 4: 2.80 meters, 19.26 seconds
+Goal 5: 6.51 meters, 57.13 seconds
+Goal 7: 5.81 meters, 27.66 seconds
+Goal 8: 11.51 meters, 45.70 seconds
+Goal 10: 6.98 meters, 31.63 seconds
+Goal 3: 10.85 meters, 48.21 seconds
+Goal 4: 2.84 meters, 18.68 seconds
+Goal 5: 4.93 meters, 28.16 seconds
+Goal 8: 15.27 meters, 62.12 seconds
+Goal 10: 8.62 meters, 36.48 seconds

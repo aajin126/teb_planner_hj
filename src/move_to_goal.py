@@ -22,9 +22,11 @@ class testPlannerNode:
         self.move_client.wait_for_server()
         
         # Define start and goal coordinates
-        self.start_coords = (-0.832, 4.780, 0.0)  # (x, y, yaw)
-        self.goal_coords = (-3.585359, 4.283509, 0.067430)  # Fixed goal coordinates
-        
+        self.start_coords = (-0.6847482919692993, -0.8590271472930908, 0.0037508010864257812)  # (x, y, yaw)
+        self.goal_coords = (2.1583986282348633, -1.171940565109253, 0.003467559814453125)  # Fixed goal coordinates
+        #self.goal_coords = (-5.234235763549805, -1.9670383930206299, 0.0025968551635742188) 
+        #self.goal_coords = (3.6356163024902344, -5.514806747436523, 0.005099296569824219) 
+
         self.state_msg = ModelState()
         self.state_msg.model_name = 'former'
         
@@ -94,7 +96,7 @@ class testPlannerNode:
         
         while not rospy.is_shutdown():
             rospy.wait_for_service('/gazebo/set_model_state')
-            user_input = raw_input("Enter 'start' to reset the robot to start position or 'goal' to move to the goal: ")
+            user_input = input("Enter 'start' to reset the robot to start position or 'goal' to move to the goal: ")
             
             if user_input == 'start':
                 self.resetPose()
@@ -102,41 +104,41 @@ class testPlannerNode:
                     set_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
                     resp = set_state(self.state_msg)
                     
-                    self.move_client.send_goal(self.goal)
-                    rospy.loginfo('Sent goal: from %f %f %f to %f %f %f', 
-                        self.state_msg.pose.position.x, 
-                        self.state_msg.pose.position.y, 
-                        self.state_msg.pose.orientation.w, 
-                        self.goal.target_pose.pose.position.x, 
-                        self.goal.target_pose.pose.position.y, 
-                        self.goal.target_pose.pose.orientation.w)
+                #     self.move_client.send_goal(self.goal)
+                #     rospy.loginfo('Sent goal: from %f %f %f to %f %f %f', 
+                #         self.state_msg.pose.position.x, 
+                #         self.state_msg.pose.position.y, 
+                #         self.state_msg.pose.orientation.w, 
+                #         self.goal.target_pose.pose.position.x, 
+                #         self.goal.target_pose.pose.position.y, 
+                #         self.goal.target_pose.pose.orientation.w)
                     
-                    self.s_marker_pub.publish(self.setMarker(self.state_msg.pose.position.x, self.state_msg.pose.position.y, self.state_msg.pose.orientation.w, 0))
-                    self.g_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 0))
+                #     self.s_marker_pub.publish(self.setMarker(self.state_msg.pose.position.x, self.state_msg.pose.position.y, self.state_msg.pose.orientation.w, 0))
+                #     self.g_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 0))
 
-                    wait = self.move_client.wait_for_result()
-                    if not wait:
-                        rospy.logerr("Action server not available!")
-                        rospy.signal_shutdown("Action server not available!")
-                    else:
-                        if self.move_client.get_state() == GoalStatus.SUCCEEDED:
-                            rospy.loginfo('Goal reached!!')
-                            self.r_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 1))
-                        else:
-                            rospy.loginfo('Failed to reach the goal!!')
-                            result_f.write("{0} {1} {2} {3} {4} {5}\n".format(
-                                self.state_msg.pose.position.x,
-                                self.state_msg.pose.position.y,
-                                self.state_msg.pose.orientation.w,
-                                self.goal.target_pose.pose.position.x,
-                                self.goal.target_pose.pose.position.y,
-                                self.goal.target_pose.pose.orientation.w))
-                            self.r_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 2))
+                #     wait = self.move_client.wait_for_result()
+                #     if not wait:
+                #         rospy.logerr("Action server not available!")
+                #         rospy.signal_shutdown("Action server not available!")
+                #     else:
+                #         if self.move_client.get_state() == GoalStatus.SUCCEEDED:
+                #             rospy.loginfo('Goal reached!!')
+                #             self.r_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 1))
+                #         else:
+                #             rospy.loginfo('Failed to reach the goal!!')
+                #             result_f.write("{0} {1} {2} {3} {4} {5}\n".format(
+                #                 self.state_msg.pose.position.x,
+                #                 self.state_msg.pose.position.y,
+                #                 self.state_msg.pose.orientation.w,
+                #                 self.goal.target_pose.pose.position.x,
+                #                 self.goal.target_pose.pose.position.y,
+                #                 self.goal.target_pose.pose.orientation.w))
+                #             self.r_marker_pub.publish(self.setMarker(self.goal.target_pose.pose.position.x, self.goal.target_pose.pose.position.y, self.goal.target_pose.pose.orientation.w, 2))
                     
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s" % e)
             elif user_input == 'goal':
-                self.resetPose()
+                #self.resetPose()
                 try:
                     self.move_client.send_goal(self.goal)
                     rospy.loginfo('Sent goal: from %f %f %f to %f %f %f',

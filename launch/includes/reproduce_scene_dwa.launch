@@ -1,9 +1,10 @@
+<!-- -->
 <launch>
 
   <master auto="start"/>
 
   <!-- Map Server-->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find teb_planner_hj)/map/whole.yaml" output="screen">
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find teb_planner_hj)/map/obs.yaml" output="screen">
   </node>
 
   <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 10">

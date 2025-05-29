@@ -1,0 +1,45 @@
+Goal 1 Fail
+Goal 2: 10.62 meters, 24.80 seconds
+Goal 3: 6.93 meters, 15.90 seconds
+Goal 4 Fail
+Goal 5: 5.38 meters, 13.49 seconds
+Goal 6: 8.00 meters, 22.05 seconds
+Goal 7: 6.09 meters, 15.80 seconds
+Goal 8 Fail
+Goal 9 Fail
+Goal 10: 7.11 meters, 20.88 seconds
+
+
+Goal 1 Fail
+Goal 2: 10.53 meters, 24.79 seconds
+Goal 3: 7.10 meters, 17.78 seconds
+Goal 4: 3.32 meters, 10.46 seconds
+Goal 5: 5.37 meters, 16.16 seconds
+Goal 6: 7.90 meters, 22.69 seconds
+Goal 7: 6.24 meters, 15.72 seconds
+Goal 8 Fail
+Goal 9 Fail
+Goal 10: 7.08 meters, 19.85 seconds
+
+Goal 1 Fail
+Goal 2: 10.59 meters, 25.03 seconds
+Goal 3: 7.04 meters, 17.75 seconds
+Goal 4: 3.20 meters, 9.54 seconds
+Goal 5: 5.36 meters, 15.71 seconds
+Goal 6: 7.82 meters, 17.55 seconds
+Goal 7: 6.15 meters, 15.22 seconds
+Goal 8 Fail
+Goal 9: 8.27 meters, 36.67 seconds
+Goal 10: 7.09 meters, 20.49 seconds
+
+
+Goal 1 Fail
+Goal 2: 10.59 meters, 25.61 seconds
+Goal 3: 6.97 meters, 16.30 seconds
+Goal 4: 3.34 meters, 10.65 seconds
+Goal 5: 5.44 meters, 14.30 seconds
+Goal 6: 8.16 meters, 24.33 seconds
+Goal 8 Fail
+Goal 7: 6.10 meters, 15.39 seconds
+Goal 9: 8.30 meters, 38.16 seconds
+Goal 10: 7.01 meters, 20.63 seconds
