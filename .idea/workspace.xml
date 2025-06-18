@@ -5,8 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a534ab83-8e40-4509-8dc0-a757ad039996" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/launch/includes/rviz_config/autoexplorer_small_envs.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/launch/includes/rviz_config/autoexplorer_small_envs.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/includes/aws_bookstore.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/includes/aws_bookstore.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/param_teb/costmap_common_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/param/param_teb/costmap_common_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/param_teb/global_costmap_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/param/param_teb/global_costmap_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/param_teb/local_costmap_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/param/param_teb/local_costmap_params.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/param/param_teb/teb_local_planner_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/param/param_teb/teb_local_planner_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/b_fail_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/b_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time_filtered.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time_filtered_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time_new.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time_new_dfiltered.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/execution_time_new_dfiltered_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/move2goal.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/move2goal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navfn_debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_lengths.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/path_lengths.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_lengths_dwa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_lengths_mb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_lengths_ori.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/path_selection.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/potarr_window.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/result_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/result_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

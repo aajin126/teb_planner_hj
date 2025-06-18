@@ -49,30 +49,31 @@ def main():
 
     # 로봇이 시작할 기본 pose 정의
     start_pose = Pose(
-        position=Point(x=0.035176217555999756, y=0.0025000572204589844, z=0.004619598388671875),
+        position=Point(x=-0.001371830701828003, y=-0.43494153022766113, z=0.0040073394775390625),
         orientation=Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
     )
 
     # 이동할 goal 목록
     goals = [
-        Pose(position=Point(-5.376387596130371, -1.9829909801483154, 0.0025796890258789062), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(-7.038274765014648, -6.100484848022461, 0.004405975341796875), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(2.0859322547912598, -5.926054954528809, 0.004673004150390625), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(2.153135299682617, -1.359513759613037, 0.0032796859741210938), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(-3.689016342163086, -1.930342197418213, 0.00272369384765625), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(3.6924867630004883, -5.551314830780029, 0.005063056945800781), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(5.42404842376709, -1.186535358428955, 0.0034856796264648438), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(5.483254432678223, -5.260541915893555, 0.0053730010986328125), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(-5.36610221862793, -3.011920690536499, 0.0015506744384765625), orientation=Quaternion(0, 0, 0, 1)),
-        Pose(position=Point(-0.5889233350753784, -6.269580841064453, 0.004302024841308594), orientation=Quaternion(0, 0, 0, 1)),
+        #Pose(position=Point(2.0118680000305176, -1.1605618000030518, 0.0008535385131835938), orientation=Quaternion(0, 0, 0, 1)),
+        #Pose(position=Point(3.6787428855895996, -4.710432052612305, 0.0008535385131835938), orientation=Quaternion(0, 0, 0, 1)),
+        #Pose(position=Point(4.22443151473999, -6.129032135009766, 0.004008293151855469), orientation=Quaternion(0, 0, 0, 1)),
+        #Pose(position=Point(7.020925521850586, -4.3737311363220215, 0.0008535385131835938), orientation=Quaternion(0, 0, 0, 1)),
+        #Pose(position=Point(6.056573390960693, -1.581486463546753, 0.0013828277587890625), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-0.34913772344589233, -6.272071838378906, 0.0008535385131835938), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-7.090811729431152, -5.745904922485352, 0.0023775100708007812), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-6.302387714385986, -0.7282567024230957, 0.0008535385131835938), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-3.7159152030944824, -2.111722469329834, 0.002437591552734375), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-3.0558886528015137, -5.786387920379639, 0.00397491455078125), orientation=Quaternion(0, 0, 0, 1)),
+        Pose(position=Point(-0.7093909978866577, -1.9743623733520508, 0.00397491455078125), orientation=Quaternion(0, 0, 0, 1))
     ]
 
     rate = rospy.Rate(10)  # 1 Hz 대기
-
+    rospy.loginfo("Resetting robot to start pose...")
+    #reset_robot_pose(start_pose)
+    
     for idx, goal_pose in enumerate(goals):
-        rospy.loginfo("Resetting robot to start pose...")
-        reset_robot_pose(start_pose)
-        rospy.sleep(1.0)
+        rospy.sleep(10.0)
 
         rospy.loginfo("Sending goal %d", idx + 1)
 
@@ -95,7 +96,6 @@ def main():
         else:
             rospy.logwarn("Failed to reach goal %d. State: %d", idx + 1, state)
 
-        rospy.sleep(1.0)
         
 if __name__ == '__main__':
     try:

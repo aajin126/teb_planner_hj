@@ -11,7 +11,7 @@ TebLocalPlannerROS:
   global_plan_viapoint_sep: -1.0
   max_global_plan_lookahead_dist: 5.0
   force_reinit_new_goal_dist: 1.0
-  feasibility_check_no_poses: 10 #5
+  feasibility_check_no_poses: 5
   publish_feedback: False
   shrink_horizon_backup: True
   allow_init_with_backwards_motion: False
@@ -31,19 +31,19 @@ TebLocalPlannerROS:
   cmd_angle_instead_rotvel: false # Not used in diff
   footprint_model:
     type: "polygon"
-    vertices: [[-0.2025, -0.2025], [-0.2025, 0.2025], [0.2025, 0.2025], [0.2025, -0.2025]]
+    vertices: [[-0.18, -0.18], [-0.18, 0.18], [0.18, 0.18], [0.18, -0.18]]
  
   # GoalTolerance
   xy_goal_tolerance: 0.3 #0.1
-  yaw_goal_tolerance: 0.5 #0.2
+  yaw_goal_tolerance: 3.14 #0.2
   free_goal_vel: False
   complete_global_plan: True
 
   # Obstacles
-  min_obstacle_dist: 0.13 #0.23 
+  min_obstacle_dist: 0.1 #0.23 
   include_costmap_obstacles: True
   costmap_obstacles_behind_robot_dist: 1.0
-  inflation_dist: 0.21
+  inflation_dist: 0.15
   include_dynamic_obstacles: True
   dynamic_obstacle_inflation_dist: 0.6
   legacy_obstacle_association: False
@@ -76,7 +76,7 @@ TebLocalPlannerROS:
   weight_kinematics_turning_radius: 2.0
   weight_optimaltime: 10.0 #must be > 0
 #weight_shortest_path: 10.0
-  weight_obstacle: 10.0
+  weight_obstacle: 5.0
   weight_inflation: 0.1
   weight_dynamic_obstacle: 10.0
   weight_dynamic_obstacle_inflation: 0.2

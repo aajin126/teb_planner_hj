@@ -7,7 +7,7 @@ global_costmap:
   static_map: true
   transform_tolerance: 0.5
 
-  footprint_model: [[-0.202, -0.202], [-0.202, 0.202], [0.202, 0.202], [0.202, -0.202]]
+  footprint_model: [[-0.18, -0.18], [-0.18, 0.18], [0.18, 0.18], [0.18, -0.18]]
  
   plugins:
     - {name: static_layer,            type: "costmap_2d::StaticLayer"}
